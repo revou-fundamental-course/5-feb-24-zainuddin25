@@ -42,7 +42,7 @@ header {
 }
 
 /* Responsive Mobile */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
   header {
     padding: 0px 12px;
     position: relative;
