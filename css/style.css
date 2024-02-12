@@ -9,6 +9,10 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+}
+
 header {
   max-width: 1024px;
   margin: 0 auto;
@@ -23,7 +27,6 @@ header {
   justify-self: end;
   align-items: center;
   gap: 12px;
-  list-style: none;
 }
 
 .button-link {
@@ -32,4 +35,57 @@ header {
   border-radius: 8px;
   font-size: 16px;
   color: black;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+/* Responsive Mobile */
+@media only screen and (max-width: 480px) {
+  header {
+    padding: 0px 12px;
+    position: relative;
+    height: 60px;
+  }
+
+  #logo {
+    font-size: 20px;
+  }
+
+  #navigation-link {
+    display: none;
+  }
+
+  #hamburger-menu {
+    display: block;
+    background-color: #fede3e;
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+  }
+
+  #hamburger-menu > i {
+    font-size: 18px;
+  }
+
+  #navigation-responsive {
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+      0 4px 6px -4px rgb(0 0 0 / 0.1);
+  }
+
+  #navigation-responsive > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .nav-link {
+    color: black;
+  }
 }
