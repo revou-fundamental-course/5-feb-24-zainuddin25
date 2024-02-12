@@ -4,5 +4,4 @@ const celciusToFahrenheit = (celcius) => {
 
 const fahrenheitToCelcius = (fahrenheit) => {
   return ((fahrenheit - 32) * 5) / 9;
-  //   return (fahrenheit - 32) * (5 / 9);
 };
