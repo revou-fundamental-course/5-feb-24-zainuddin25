@@ -55,10 +55,6 @@ header {
   width: 60%;
 }
 
-#history-section {
-  width: 40%;
-}
-
 #title-converter {
   width: 100%;
   display: flex;
@@ -111,6 +107,19 @@ header {
   padding: 12px 0;
   border-radius: 4px;
   cursor: pointer;
+}
+
+#converter-formula {
+  resize: none;
+  margin-top: 16px;
+  width: calc(100% - 36px);
+  height: 120px;
+  padding: 12px 18px;
+  font-size: 20px;
+}
+
+#history-section {
+  width: 40%;
 }
 
 /* Responsive Mobile */
