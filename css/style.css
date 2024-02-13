@@ -81,7 +81,12 @@ header {
     left: 0px;
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
       0 4px 6px -4px rgb(0 0 0 / 0.1);
-    display: block;
+    z-index: 50;
+  }
+
+  .active-menu {
+    display: block !important;
+    background-color: white;
   }
 
   #navigation-responsive > ul {
