@@ -115,8 +115,11 @@ header {
 
 /* Responsive Mobile */
 @media only screen and (max-width: 600px) {
-  header {
+  body {
     padding: 0px 12px;
+  }
+
+  header {
     position: relative;
     height: 60px;
   }
@@ -165,5 +168,19 @@ header {
 
   .nav-link {
     color: black;
+  }
+
+  #main-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #convert-section {
+    width: 100%;
+  }
+
+  #history-section {
+    width: 100%;
+    background-color: red;
   }
 }
