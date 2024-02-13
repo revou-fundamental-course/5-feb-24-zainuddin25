@@ -1,4 +1,5 @@
 body {
+  max-width: 1024px;
   margin: 0 auto;
   padding: 0;
   font-family: "Roboto";
@@ -14,7 +15,6 @@ ul {
 }
 
 header {
-  max-width: 1024px;
   margin: 0 auto;
   height: 60px;
   display: flex;
@@ -43,6 +43,74 @@ header {
 
 #hamburger-menu {
   display: none;
+}
+
+#main-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+#convert-section {
+  width: 60%;
+}
+
+#history-section {
+  width: 40%;
+}
+
+#title-converter {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+#title-from {
+  width: 57%;
+}
+
+#title-result {
+  width: 37%;
+}
+
+#converter-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#converter-input p {
+  width: 6%;
+  text-align: center;
+}
+
+#input-from {
+  width: calc(57% - 36px);
+  background-color: white;
+  outline: none;
+  border: 1px solid #eaeaea;
+  padding: 14px 18px;
+  border-radius: 4px;
+}
+
+#input-result {
+  width: calc(37% - 36px);
+  background-color: white;
+  outline: none;
+  border: 1px solid #eaeaea;
+  padding: 14px 18px;
+  border-radius: 4px;
+}
+
+#button-convert {
+  width: 150px;
+  margin-top: 10px;
+  background-color: #fede3e;
+  border: none;
+  padding: 12px 0;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 /* Responsive Mobile */

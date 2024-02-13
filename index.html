@@ -70,8 +70,23 @@
       </nav>
     </header>
     <!-- END HEADER -->
-    <section>
-      <h1>Hallo World</h1>
+    <section id="main-content">
+      <section id="convert-section">
+        <h1>Temperature Converter</h1>
+        <div id="title-converter">
+          <p id="title-from">Celcius (°C)</p>
+          <p id="title-result">Fahrenheit (°F)</p>
+        </div>
+        <form>
+          <div id="converter-input">
+            <input placeholder="Input Number" type="number" id="input-from" />
+            <p>=</p>
+            <input placeholder="Result" disabled id="input-result" />
+          </div>
+          <button id="button-convert">Convert</button>
+        </form>
+      </section>
+      <section id="history-section"></section>
     </section>
     <!-- CONTENT -->
     <!-- MAIN CONTENT -->
