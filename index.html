@@ -44,7 +44,7 @@
           </li>
         </ul>
       </nav>
-      <button id="hamburger-menu" onclick="openMenu()">
+      <button id="hamburger-menu">
         <i class="fa-solid fa-bars"></i>
       </button>
       <nav id="navigation-responsive" class="menu-list">
@@ -72,7 +72,13 @@
     <!-- END HEADER -->
     <section id="main-content">
       <section id="convert-section">
-        <h1>Temperature Converter</h1>
+        <div id="converter-title">
+          <h1>Temperature Converter</h1>
+          <select class="select" id="select-type-convert">
+            <option value="ctf">Celcius to Fahrenheit</option>
+            <option value="ftc">Fahrenheit to Celcius</option>
+          </select>
+        </div>
         <div id="title-converter">
           <p id="title-from">Celcius (°C)</p>
           <p id="title-result">Fahrenheit (°F)</p>
