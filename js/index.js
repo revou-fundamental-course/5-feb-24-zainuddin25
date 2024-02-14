@@ -5,6 +5,7 @@ const buttonConvert = document.querySelector("#button-convert");
 const converterFormula = document.querySelector("#converter-formula");
 const titleFrom = document.querySelector("#title-from");
 const titleResult = document.querySelector("#title-result");
+const historyList = document.querySelector("#history-list");
 
 const history = localStorage.getItem("history");
 let typeConvert = "ctf";
@@ -16,6 +17,30 @@ const celciusToFahrenheit = (celcius) => {
 const fahrenheitToCelcius = (fahrenheit) => {
   return ((fahrenheit - 32) * 5) / 9;
 };
+
+function mapHistoryList() {
+  const historyData = JSON.parse(history);
+  const historyItem = historyData
+    .map((result) => {
+      return `<div class="list">
+      <div class="head-history">
+        <span>${result.from}</span>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span>${result.to}</span>
+      </div>
+      <div class="body-history">
+        <span>${result.number} °${result.from == "celcius" ? "C" : "F"}</span>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span>${result.result} °${result.from == "celcius" ? "F" : "C"}</span>
+      </div>
+      </div>`;
+    })
+    .join("");
+
+  historyList.innerHTML = historyItem;
+}
+
+document.addEventListener("DOMContentLoaded", mapHistoryList);
 
 document
   .querySelector("#select-type-convert")
