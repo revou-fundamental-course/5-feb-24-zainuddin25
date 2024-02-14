@@ -60,6 +60,11 @@ document
     }
   });
 
+document.querySelector("#trash-icon").addEventListener("click", function () {
+  localStorage.removeItem("history");
+  location.reload();
+});
+
 document
   .querySelector("#hamburger-menu")
   .addEventListener("click", function () {

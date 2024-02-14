@@ -194,6 +194,10 @@ header {
   font-style: italic;
 }
 
+#trach-icon {
+  cursor: pointer;
+}
+
 /* Responsive Mobile */
 @media only screen and (max-width: 600px) {
   body {
@@ -262,6 +266,5 @@ header {
 
   #history-section {
     width: 100%;
-    background-color: red;
   }
 }
